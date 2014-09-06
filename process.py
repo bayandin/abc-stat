@@ -24,8 +24,14 @@ if __name__ == '__main__':
                 for j in range(i * part, (i + 1) * part):
                     stat[c][j] += 1
 
+    x_min = 0
+    x_max = BUCKETS_COUNT
+    y_min = 0
+    y_max = max(max(i) for i in stat.values())
+
     for c in ALPHABET:
         fig = plt.figure(figsize=(10, 10))
+        plt.axis([x_min, x_max, y_min, y_max])
         plt.fill_between(
             range(BUCKETS_COUNT),
             stat[c]

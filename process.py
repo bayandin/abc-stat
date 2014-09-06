@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 #
-# http://www.prooffreader.com/2014/05/graphing-distribution-of-english.html
+# Based on http://www.prooffreader.com/2014/05/graphing-distribution-of-english.html
+#
 
 import matplotlib.pyplot as plt
 

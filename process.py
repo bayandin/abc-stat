@@ -30,3 +30,4 @@ if __name__ == '__main__':
             stat[c]
         )
         fig.savefig('result/%s.png' % c)
+        plt.close(fig)
